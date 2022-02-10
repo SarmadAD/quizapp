@@ -1,0 +1,6 @@
+@import './base.css';
+@import './variables.css';
+@import './utils.css';
+@import '../style/components/questionsCard.css';
+@import '../style/components/footer.css';
+

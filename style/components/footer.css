@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+.home, .bookmarked, .create, .profile{
+    border-right: 1px solid black;
+    text-align: center;
+    width: 100%;
+}
