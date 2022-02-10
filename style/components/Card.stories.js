@@ -1,18 +1,33 @@
-import DefaultHtml from "./Card.default.html";
+import questionCard from "./questionCard.html";
 
 export default {
-  title: "Components/Card",
+  title: "Components/questionCard",
 };
 
-export const Default = () => DefaultHtml;
+export const Default = () => questionCard;
 
-export const Error = () => /* html */ `
-  <article class="Card Card--error">
-    <h4 class="Card__title">Card Title Bla</h4>
-    <p class="Card__content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo
-      eum ea totam! Iure obcaecati odit soluta sint quidem similique, ipsam
-      debitis nihil sit iusto, cum aliquid neque placeat quibusdam.
-    </p>
-  </article>
+export const Footer = () => /* html */ `
+<div class="footer">
+<div class="home">
+    <a href="#">
+        <img alt="Nav home" src="../../images/outline_home_black_24dp.png" />
+    </a>
+</div>
+<div class="bookmarked">
+    <a href="./pages/create.html">
+        <img alt="Nav bookmark" src="../../images/bookmark.png" />
+    </a>
+</div>
+<div class="create">
+
+    <a href="#">
+        <img alt="Nav create" src="../../images/outline_article_black_24dp.png" />
+    </a>
+</div>
+<div class="profile">
+    <a href="#">
+        <img alt="Nav profile" src="../../images/outline_account_circle_black_24dp.png" />
+    </a>
+</div>
+</div>
 `;
