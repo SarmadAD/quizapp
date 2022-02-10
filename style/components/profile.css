@@ -1,0 +1,38 @@
+.tags{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profileSection{
+    padding: 1em;
+}
+
+.profileimg{
+}
+
+.tag{
+    border: 1px solid black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.profilePhotoAndName{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profilePhoto{
+    margin-right: 1em;
+}
+
+.aboutYouAndTags{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.logout{
+    display:flex;
+    justify-content: center;
+}
