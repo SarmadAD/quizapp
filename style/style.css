@@ -3,4 +3,6 @@
 @import './utils.css';
 @import '../style/components/questionsCard.css';
 @import '../style/components/footer.css';
+@import '../style/components/bookmark.css';
+@import '../style/components/create.css';
 

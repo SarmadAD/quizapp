@@ -7,13 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <title>Bookmarks</title>
+    <title>Create</title>
 </head>
 
 <body>
     <main>
         <div class="header">
-            <h1>Bookmarks</h1>
+            <h1 id="createquestionHeader">Create</h1>
+        </div>
+        <div class="createQuestionForm">
+            <form aria-labelledby="createquestionHeader">
+                <fieldset>
+                    <div class="createquestion">
+                        <label for="lbCreateQuestion">Frage Erstellen:</label>
+                        <textarea id="lbCreateQuestion" rows="4"></textarea>
+                    </div>
+                    <div class="addanswer">
+                        <label for="lbaddanswer">Frage Erstellen:</label>
+                        <textarea id="lbaddanswer" rows="4"></textarea>
+                    </div>
+                    <div class="addTags">
+                        <label for="lbaddtags">Tags Erstellen:</label>
+                        <textarea id="lbaddtags" rows="2"></textarea>
+                    </div>
+                    <div class="submitButton">
+                        <button type="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </main>
 
@@ -25,13 +46,13 @@
                 </a>
             </div>
             <div class="bookmarked">
-                <a href="create.html">
+                <a href="bookmark.html">
                     <img alt="Nav bookmark" src="../images/bookmark.png" />
                 </a>
             </div>
             <div class="create">
 
-                <a href="#">
+                <a href="create.html">
                     <img alt="Nav create" src="../images/outline_article_black_24dp.png" />
                 </a>
             </div>
