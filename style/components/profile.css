@@ -1,0 +1,19 @@
+.tags{
+    display: flex;
+}
+
+.profileSection{
+    padding: 1em;;
+}
+
+.profileimg{
+}
+
+.tag{
+    border: 1px solid black;
+}
+
+.profilePhotoAndName{
+    display: flex;
+    justify-content: center;
+}

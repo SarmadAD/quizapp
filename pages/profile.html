@@ -7,37 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <title>Create</title>
+    <title>Profile</title>
 </head>
 
 <body>
     <main>
         <div class="header">
-            <h1 id="createquestionHeader">Create</h1>
+            <h1>Profile</h1>
         </div>
-        <div class="createQuestionForm">
-            <form aria-labelledby="createquestionHeader">
-                <fieldset>
-                    <div class="createquestion">
-                        <label for="lbCreateQuestion">Frage Erstellen:</label>
-                        <textarea id="lbCreateQuestion" rows="4"></textarea>
-                    </div>
-                    <div class="addanswer">
-                        <label for="lbaddanswer">Antwort Erstellen:</label>
-                        <textarea id="lbaddanswer" rows="4"></textarea>
-                    </div>
-                    <div class="addTags">
-                        <label for="lbaddtags">Tags Erstellen:</label>
-                        <textarea id="lbaddtags" rows="2"></textarea>
-                    </div>
-                    <div class="submitButton">
-                        <button type="submit">Submit</button>
-                    </div>
-                </fieldset>
-            </form>
+        <div class="profileSection">
+            <div class="profilePhotoAndName">
+                <div class="profilePhoto">
+                    <img class="profileimg" alt="profile Picture" src="../images/outline_account_circle_black_24dp.png" />
+                </div>
+                <div class="profileName">
+                    <p>Hello, Sarmad</p>
+                </div>
+            </div>
+            <div class="aboutYouAndTags">
+                <div class="aboutYou">
+                    <p>LoremZufallText IppsuPlaBlaPlaBla</p>
+                </div>
+                <div class="tags">
+                    <div class="tag">Tag1</div>
+                    <div class="tag">Tag2</div>
+                    <div class="tag">Tag3</div>
+                    <div class="tag">Tag4</div>
+                </div>
+            </div>
+            <div class="logout">
+                <button>Logout</button>
+            </div>
         </div>
     </main>
-
     <footer>
         <div class="footer">
             <div class="home">
@@ -51,6 +53,7 @@
                 </a>
             </div>
             <div class="create">
+
                 <a href="create.html">
                     <img alt="Nav create" src="../images/outline_article_black_24dp.png" />
                 </a>
@@ -63,5 +66,4 @@
         </div>
     </footer>
 </body>
-
 </html>
