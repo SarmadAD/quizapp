@@ -1,35 +1,40 @@
-.questionsCard{
+.questionscard {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:1em;
+    padding: 1em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
     margin-bottom: 1em;
-}
-
-.questionsCard__tag{
+  }
+  
+  .questions-card__tag {
     border: 1px solid black;
     padding-left: 0.5em;
     padding-right: 0.5em;
-}
-
-.questionsCard__tags{
+  }
+  
+  .questionsCard__tags {
     display: flex;
     justify-content: space-evenly;
-}
-
-.questionsCard__showAnswer {
+  }
+  
+  .questionsCard__showAnswer,
+  .questionsCard__hideAnswer {
     margin: 0em auto 1em auto;
-}
-
-.questionsCard__bookmark{
+  }
+  
+  .questionsCard__bookmark {
     position: absolute;
-    top:-10px;
-    right:0px
-}
-
-.questionsCard__showAnswer :hover{
+    top: -10px;
+    right: 0px;
+  }
+  
+  .questionsCard__showAnswer :hover {
     background-color: gainsboro;
-}
-
+  }
+  
+  .toggle-answer {
+    display: none;
+  }
+  
