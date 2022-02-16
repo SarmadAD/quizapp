@@ -37,4 +37,8 @@
   .toggle-answer {
     display: none;
   }
+
+  .questionsSection{
+    margin-bottom: 5em;
+  }
   
