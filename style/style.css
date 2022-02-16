@@ -1,7 +1,7 @@
 @import './variables.css';
 @import './base.css';
 @import './utils.css';
-@import '../style/components/questionscard.css';
+@import '../style/components/questionsCard.css';
 @import '../style/components/footer.css';
 @import '../style/components/bookmark.css';
 @import '../style/components/create.css';
