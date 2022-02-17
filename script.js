@@ -10,17 +10,17 @@ const addAnswerTextarea = document.querySelector('[data-js="taAddAnswer"]');
 const addTagsTextarea = document.querySelector('[data-js="taAddTags"]');
 const maxCharacters = 250;
 
-createQuestionTextarea.addEventListener('input',() => {
+createQuestionTextarea?.addEventListener('input',() => {
   if(createQuestionTextarea.value.length <= maxCharacters){
     createQuestionCount.textContent = `Zeichen: ${createQuestionTextarea.value.length} /${maxCharacters}`;
   }
 });
   
-  addAnswerTextarea.addEventListener('input',() => {
+  addAnswerTextarea?.addEventListener('input',() => {
     addAnswerCount.textContent = `Zeichen: ${addAnswerTextarea.value.length}/${maxCharacters}`;
   });
   
-  addTagsTextarea.addEventListener('input',() => {
+  addTagsTextarea?.addEventListener('input',() => {
     addTagsCount.textContent = `Zeichen: ${addTagsTextarea.value.length}/${maxCharacters}`;
   });
 
