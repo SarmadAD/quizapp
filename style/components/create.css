@@ -1,8 +1,3 @@
-.createQuestionForm {
-  padding: 1em;
-  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
-}
-
 .createquestion {
   display: flex;
   flex-direction: column;
@@ -24,4 +19,11 @@
 .submitButton {
   display: flex;
   justify-content: center;
+}
+
+.createform {
+  background-color: #7c2e41;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
 }
