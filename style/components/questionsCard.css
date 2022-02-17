@@ -41,3 +41,11 @@
 .questionsSection {
   margin-bottom: 5em;
 }
+
+.whiteBookmark {
+  content: url('../../images/whiteBookmark.png');
+}
+
+.blackBookMark {
+  content: url('../../images/bookmark.png');
+}
