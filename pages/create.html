@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <script src="../scripts/create.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
     <title>Create</title>
 </head>
 
@@ -21,17 +21,17 @@
                 <fieldset>
                     <div class="createquestion">
                         <label for="lbCreateQuestion">Frage Erstellen:</label>
-                        <textarea id="lbCreateQuestion" rows="4" data-js="taCreateQuestion"></textarea>
+                        <textarea id="lbCreateQuestion" rows="4" data-js="taCreateQuestion" maxlength="250"></textarea>
                         <p data-js="createQuestionCount"></p>
                     </div>
                     <div class="addanswer">
                         <label for="lbaddanswer">Antwort Erstellen:</label>
-                        <textarea id="lbaddanswer" rows="4" data-js="taAddAnswer"></textarea>
-                        <p data-js="addAnswerCount"></p>ss
+                        <textarea id="lbaddanswer" rows="4" data-js="taAddAnswer" maxlength="250"></textarea>
+                        <p data-js="addAnswerCount"></p>
                     </div>
                     <div class="addTags">
                         <label for="lbaddtags">Tags Erstellen:</label>
-                        <textarea id="lbaddtags" rows="2" data-js="taAddTags"></textarea>
+                        <textarea id="lbaddtags" rows="2" data-js="taAddTags" maxlength="250"></textarea>
                         <p data-js="addTagsCount"></p>
                     </div>
                     <div class="submitButton">
