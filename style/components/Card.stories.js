@@ -1,7 +1,7 @@
-import questionCard from "./questionCard.html";
+import questionCard from './questionCard.html';
 
 export default {
-  title: "Components/questionCard",
+  title: 'Components/questionCard',
 };
 
 export const Default = () => questionCard;
