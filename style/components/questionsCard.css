@@ -6,6 +6,8 @@
   box-shadow: rgb(0 0 0 / 35%) 0 5px 15px;
   position: relative;
   margin-bottom: 1em;
+  background-color: #7c2e41;
+  border-radius: 10px;
 }
 
 .questions-card__tag {
@@ -40,4 +42,12 @@
 
 .questionsSection {
   margin-bottom: 5em;
+}
+
+.whiteBookmark {
+  content: url('../../images/whiteBookmark.png');
+}
+
+.blackBookMark {
+  content: url('../../images/bookmark.png');
 }
