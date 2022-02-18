@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <script src="../script.js" defer></script>
     <title>Bookmarks</title>
   </head>
 
@@ -16,18 +17,24 @@
       </div>
     </main>
     <div class="section-m-1em">
-      <div class="questionscard">
-        <div class="questionsCard__bookmark">
-          <img alt="bookmark" src="../../images/bookmark.png" />
+      <div class="questionscard" data-js="questionscard">
+        <div class="questionsCard__bookmark" data-js="questionsCard__bookmark">
+          <a href="#"><img alt="bookmark" class="whiteBookmark" data-js="bookmarkImage" /></a>
         </div>
         <div class="questionsCard__questionsHeader">
-          <h2>Questions:</h2>
+          <h2>Question:</h2>
         </div>
         <div class="questionsCard__questionText">
-          <p>BlaBlaBlaBlalla???</p>
+          <p>Ist HTML eine Programmiersprache?</p>
         </div>
-        <div class="questionsCard__showAnswer">
-          <button>Show Answer</button>
+        <div class="questionsCard__showAnswer" data-js="questionsCard__showAnswer">
+          <button data-js="showAnswerButton">Show Answer</button>
+        </div>
+        <div class="questionsCard__hideAnswer toggle-answer" data-js="answerButtonAndText">
+          <div class="answer" data-js="answerText">
+            <h3>Antwort:</h3>
+            <p>Nein, HTML ist keine Programmiersprache.</p>
+          </div>
         </div>
         <div class="questionsCard__tags">
           <div class="questions-card__tag">Tag1</div>
@@ -36,18 +43,24 @@
           <div class="questions-card__tag">Tag4</div>
         </div>
       </div>
-      <div class="questionscard">
-        <div class="questionsCard__bookmark">
-          <img alt="bookmark" src="../../images/bookmark.png" />
+      <div class="questionscard" data-js="questionscard">
+        <div class="questionsCard__bookmark" data-js="questionsCard__bookmark">
+          <a href="#"><img alt="bookmark" class="whiteBookmark" data-js="bookmarkImage" /></a>
         </div>
         <div class="questionsCard__questionsHeader">
-          <h2>Questions:</h2>
+          <h2>Question:</h2>
         </div>
         <div class="questionsCard__questionText">
-          <p>BlaBlaBlaBlalla???</p>
+          <p>Ist HTML eine Programmiersprache?</p>
         </div>
-        <div class="questionsCard__showAnswer">
-          <button>Show Answer</button>
+        <div class="questionsCard__showAnswer" data-js="questionsCard__showAnswer">
+          <button data-js="showAnswerButton">Show Answer</button>
+        </div>
+        <div class="questionsCard__hideAnswer toggle-answer" data-js="answerButtonAndText">
+          <div class="answer" data-js="answerText">
+            <h3>Antwort:</h3>
+            <p>Nein, HTML ist keine Programmiersprache.</p>
+          </div>
         </div>
         <div class="questionsCard__tags">
           <div class="questions-card__tag">Tag1</div>

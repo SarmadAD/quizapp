@@ -1,5 +1,5 @@
-const showAnswerButton = document.querySelector('[data-js="showAnswerButton"]');
-const answerText = document.querySelector('[data-js="answerButtonAndText"]');
+const questionscardList = document.querySelectorAll('[data-js="questionscard"]');
+const bookmarkContainersList = document.querySelectorAll('[data-js="questionsCard__bookmark"]');
 
 const createQuestionCount = document.querySelector('[data-js="createQuestionCount"]');
 const addAnswerCount = document.querySelector('[data-js="addAnswerCount"]');
@@ -8,7 +8,7 @@ const addTagsCount = document.querySelector('[data-js="addTagsCount"]');
 const createQuestionTextarea = document.querySelector('[data-js="taCreateQuestion"]');
 const addAnswerTextarea = document.querySelector('[data-js="taAddAnswer"]');
 const addTagsTextarea = document.querySelector('[data-js="taAddTags"]');
-const bookmarkImage = document.querySelector('.whiteBookmark');
+
 const maxCharacters = 250;
 
 createQuestionTextarea?.addEventListener('input', () => {
@@ -24,15 +24,23 @@ addTagsTextarea?.addEventListener('input', () => {
   addTagsCount.textContent = `Zeichen: ${addTagsTextarea.value.length}/${maxCharacters}`;
 });
 
-bookmarkImage?.addEventListener('click', () => {
-  bookmarkImage.classList.toggle('blackBookMark');
+bookmarkContainersList.forEach(bookmark => {
+  const bookmarkImage = bookmark.querySelector('[data-js="bookmarkImage"]');
+  bookmarkImage?.addEventListener('click', () => {
+    bookmarkImage.classList.toggle('blackBookMark');
+  });
 });
 
-showAnswerButton?.addEventListener('click', () => {
-  answerText.classList.toggle('toggle-answer');
-  if (showAnswerButton.textContent === 'Hide Answer') {
-    showAnswerButton.textContent = 'Show Answer';
-  } else {
-    showAnswerButton.textContent = 'Hide Answer';
-  }
+questionscardList.forEach(questioncard => {
+  const showAnswerButton = questioncard.querySelector('[data-js="showAnswerButton"]');
+  const answerText = questioncard.querySelector('[data-js="answerButtonAndText"]');
+
+  showAnswerButton?.addEventListener('click', () => {
+    answerText.classList.toggle('toggle-answer');
+    if (showAnswerButton.textContent === 'Hide Answer') {
+      showAnswerButton.textContent = 'Show Answer';
+    } else {
+      showAnswerButton.textContent = 'Hide Answer';
+    }
+  });
 });
