@@ -1,1 +1,5 @@
-/* Place for variables */
+:root {
+  --redcolor: #7c2e41;
+  --bluecolor: #053c5e;
+  --shadow: rgb(0 0 0 / 35%) 0 5px 15px;
+}
