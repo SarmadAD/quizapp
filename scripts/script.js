@@ -1,6 +1,5 @@
 const questionscardList = document.querySelectorAll('[data-js="questionscard"]');
 const bookmarkContainersList = document.querySelectorAll('[data-js="questionsCard__bookmark"]');
-const footerItemList = document.querySelectorAll('[data-js="footerItem"]');
 
 const questionPage = document.querySelector('[data-js="questionPage"]');
 const bookmarkPage = document.querySelector('[data-js="bookmarkPage"]');
