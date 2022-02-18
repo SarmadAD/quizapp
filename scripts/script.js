@@ -1,5 +1,16 @@
 const questionscardList = document.querySelectorAll('[data-js="questionscard"]');
 const bookmarkContainersList = document.querySelectorAll('[data-js="questionsCard__bookmark"]');
+const footerItemList = document.querySelectorAll('[data-js="footerItem"]');
+
+const questionPage = document.querySelector('[data-js="questionPage"]');
+const bookmarkPage = document.querySelector('[data-js="bookmarkPage"]');
+const createPage = document.querySelector('[data-js="createPage"]');
+const profilePage = document.querySelector('[data-js="profilePage"]');
+
+const footerItemHome = document.querySelector('[data-js="footerItemHome"]');
+const footerItemBookMarked = document.querySelector('[data-js="footerItemBookMarked"]');
+const footerItemCreate = document.querySelector('[data-js="footerItemCreate"]');
+const footerItemProfile = document.querySelector('[data-js="footerItemProfile"]');
 
 const createQuestionCount = document.querySelector('[data-js="createQuestionCount"]');
 const addAnswerCount = document.querySelector('[data-js="addAnswerCount"]');
@@ -45,3 +56,44 @@ questionscardList.forEach(questioncard => {
     }
   });
 });
+
+footerItemHome?.addEventListener('click', () => {
+  questionPage.classList.remove('toogleSite');
+  hideBookmarkPage();
+  hideCreatePage();
+  hideProfilePage();
+});
+
+footerItemBookMarked?.addEventListener('click', () => {
+  bookmarkPage.classList.remove('toogleSite');
+  hideQuestionPage();
+  hideCreatePage();
+  hideProfilePage();
+});
+
+footerItemCreate?.addEventListener('click', () => {
+  createPage.classList.remove('toogleSite');
+  hideQuestionPage();
+  hideBookmarkPage();
+  hideProfilePage();
+});
+
+footerItemProfile?.addEventListener('click', () => {
+  profilePage.classList.remove('toogleSite');
+  hideQuestionPage();
+  hideBookmarkPage();
+  hideCreatePage();
+});
+
+function hideBookmarkPage() {
+  bookmarkPage.classList.add('toogleSite');
+}
+function hideQuestionPage() {
+  questionPage.classList.add('toogleSite');
+}
+function hideCreatePage() {
+  createPage.classList.add('toogleSite');
+}
+function hideProfilePage() {
+  profilePage.classList.add('toogleSite');
+}
