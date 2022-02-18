@@ -16,6 +16,7 @@ createQuestionTextarea?.addEventListener('input', () => {
     createQuestionCount.textContent = `Zeichen: ${createQuestionTextarea.value.length} /${maxCharacters}`;
   }
 });
+
 addAnswerTextarea?.addEventListener('input', () => {
   addAnswerCount.textContent = `Zeichen: ${addAnswerTextarea.value.length}/${maxCharacters}`;
 });

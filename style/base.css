@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  background-color: #7c2e41;
+  background-color: var(--redcolor);
   margin-bottom: 1em;
 }
 
@@ -10,7 +10,7 @@ h1 {
 }
 
 body {
-  background-color: #053c5e;
+  background-color: var(--bluecolor);
   color: #dfd4d4;
   margin: 0;
 }
