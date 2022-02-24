@@ -43,7 +43,9 @@ function renderQuestionCards() {
     questionCard.className = 'questionscard';
     questionCard.innerHTML = `
     <div class="questionsCard__bookmark" data-js="questionsCard__bookmark">
-      <a href="#"><img alt="bookmark" class=${card.isBookmarked ? 'blackBookMark' : 'whiteBookmark'} data-js="bookmarkImage" /></a>
+      <a href="#"><img alt="bookmark" class=${
+        card.isBookmarked ? 'blackBookMark' : 'whiteBookmark'
+      } data-js="bookmarkImage" /></a>
     </div>
     <div class="questionsCard__questionsHeader">
       <h2>Question:</h2>
