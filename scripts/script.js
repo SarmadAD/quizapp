@@ -61,8 +61,10 @@ function renderQuestionCards() {
         <h3>Antwort:</h3>
         <p>${card.answer}</p>
       </div>
-    </div>
-    `;
+    </div>      
+    <div class="questionsCard__tags">
+    ${renderTagForCard(card.tags)}
+    </div>`;
     questionSection.append(questionCard);
   });
 
@@ -89,6 +91,14 @@ function renderQuestionCards() {
       bookmarkImage.classList.toggle('blackBookMark');
     });
   });
+}
+
+function renderTagForCard(tags) {
+  let tagString = '';
+  tags.forEach(tag => {
+    tagString += `<div class="questions-card__tag">${tag}</div>`;
+  });
+  return tagString;
 }
 
 footerItemHome?.addEventListener('click', () => {
